@@ -25,35 +25,19 @@ This project is a web scraping tool that helps you quickly collect company conta
 pip install -r requirements.txt
 ```
 
+## ⚠️ Notes
+- The scraper works best with well-structured websites.
+- Some websites may block scraping → consider adding headers, retries, or proxies.
+- Always respect websites’ robots.txt and scraping policies.
 
+## 🛠️ Technologies Used
+- Python
+- Requests / Playwright / Selenium (depending on implementation)
+- BeautifulSoup / lxml for parsing
+- pandas for saving structured data
 
-
-
-
-⚠️ Notes
-
-The scraper works best with well-structured websites.
-
-Some websites may block scraping → consider adding headers, retries, or proxies.
-
-Always respect websites’ robots.txt and scraping policies.
-
-🛠️ Technologies Used
-
-Python
-
-Requests / Playwright / Selenium (depending on implementation)
-
-BeautifulSoup / lxml for parsing
-
-pandas for saving structured data
-
-📌 Next Steps / Improvements
-
-Add multi-company batch scraping
-
-Improve error handling
-
-Extract additional info (e.g., address, social media links)
-
-Implement a GUI or web interface
+## 📌 Next Steps / Improvements
+- Add multi-company batch scraping
+- Improve error handling
+- Extract additional info (e.g., address, social media links)
+- Implement a GUI or web interface
