@@ -9,38 +9,21 @@ This project is a web scraping tool that helps you quickly collect company conta
 - Scrapes the phone number and email address from that website
 ### Output: The extracted information is displayed and can be saved for further use
 
-This tool is useful for market research, lead generation, and business analysis.
+### This tool is useful for market research, lead generation, and business analysis.
 
-🚀 Features
+## 🚀 Features
+- 🔎 Automatically searches for the official company website
+- 📬 Extracts email addresses
+- ☎️ Extracts phone numbers
+- 💾 Option to save results (e.g., Excel, CSV, JSON)
+- 🛡️ Handles missing data gracefully
+- ⚙️ Installation
 
-🔎 Automatically searches for the official company website
+## Install dependencies:
 
-📬 Extracts email addresses
-
-☎️ Extracts phone numbers
-
-💾 Option to save results (e.g., Excel, CSV, JSON)
-
-🛡️ Handles missing data gracefully
-
-⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/web-scraper.git
-cd web-scraper
-
-
-Create and activate a virtual environment (optional but recommended):
-
-python -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-.venv\Scripts\activate      # Windows
-
-
-Install dependencies:
-
+"""bash
 pip install -r requirements.txt
+"""
 
 🖥️ Usage
 
