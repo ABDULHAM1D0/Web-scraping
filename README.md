@@ -1,17 +1,13 @@
-🕸️ Web Scraper – Company Contact Info Extractor
-📖 Project Overview
-
+# 🕸️ Web Scraper – Company Contact Info Extractor
+## 📖 Project Overview
 This project is a web scraping tool that helps you quickly collect company contact details from the web.
 
-Input: A company name
+### Input: A company name
 
-Process:
-
-Finds the first official website URL for that company
-
-Scrapes the phone number and email address from that website
-
-Output: The extracted information is displayed and can be saved for further use
+### Process:
+- Finds the first official website URL for that company
+- Scrapes the phone number and email address from that website
+### Output: The extracted information is displayed and can be saved for further use
 
 This tool is useful for market research, lead generation, and business analysis.
 
