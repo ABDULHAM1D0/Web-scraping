@@ -21,11 +21,11 @@ This project is a web scraping tool that helps you quickly collect company conta
 
 ## Install dependencies:
 
-"""bash
+```bash
 pip install -r requirements.txt
-"""
+```
 
-🖥️ Usage
+
 
 
 
