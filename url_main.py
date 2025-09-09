@@ -8,7 +8,7 @@ import json
 
 
 # company_names = ['AMAZON', 'MICROSOFT', 'TESLA', 'APPLE', 'LINUX', 'LAZIKA']
-
+# One way
 def searching_url(com_name):
     query = f"{com_name} OFFICIAL WEBSITE"
     attempt = 0
@@ -25,7 +25,14 @@ def searching_url(com_name):
             print(f"Attempt {attempt} failed: {e}. Retrying...")
             time.sleep(2 ** attempt)
     return None
-
+# Second way
+def find_official_website(company_name, serpapi_api_key):
+    params = {
+        "engine": "google",
+        "q": company_name,
+        "api_key": serpapi_api_key,
+        "num": 5
+    }
 
 # with open("company_names.csv", "r") as file:
 #     company_names = file.readlines()
@@ -71,6 +78,7 @@ print(dictionary_urls)
 # finally:
 #     dt.to_csv('final_data.txt', index=False)
 #
+
 
 
 
