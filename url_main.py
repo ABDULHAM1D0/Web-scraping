@@ -25,6 +25,7 @@ def searching_url(com_name):
             print(f"Attempt {attempt} failed: {e}. Retrying...")
             time.sleep(2 ** attempt)
     return None
+    
 # Second way
 def find_official_website(company_name, serpapi_api_key):
     params = {
@@ -33,8 +34,20 @@ def find_official_website(company_name, serpapi_api_key):
         "api_key": serpapi_api_key,
         "num": 5
     }
+    
     response = requests.get("https://serpapi.com/search", params=params)
     data = response.json()
+    
+     # Search for the first organic result that looks like an official website
+    for result in data.get("organic_results", []):
+        link = result.get("link", "")
+        title = result.get("title", "").lower()
+        snippet = result.get("snippet", "").lower()
+
+        if company_name.lower().split()[0] in title or company_name.lower() in snippet:
+            return link
+
+    return "Website not found"
 
 # with open("company_names.csv", "r") as file:
 #     company_names = file.readlines()
@@ -80,6 +93,7 @@ print(dictionary_urls)
 # finally:
 #     dt.to_csv('final_data.txt', index=False)
 #
+
 
 
 
