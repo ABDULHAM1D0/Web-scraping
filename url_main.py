@@ -33,6 +33,8 @@ def find_official_website(company_name, serpapi_api_key):
         "api_key": serpapi_api_key,
         "num": 5
     }
+    response = requests.get("https://serpapi.com/search", params=params)
+    data = response.json()
 
 # with open("company_names.csv", "r") as file:
 #     company_names = file.readlines()
@@ -78,6 +80,7 @@ print(dictionary_urls)
 # finally:
 #     dt.to_csv('final_data.txt', index=False)
 #
+
 
 
 
