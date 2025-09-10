@@ -37,7 +37,7 @@ pip install -r requirements.txt
 - pandas for saving structured data
 
 ## 📌 Next Steps / Improvements
-- Add multi-company batch scraping
-- Improve error handling
-- Extract additional info (e.g., address, social media links)
-- Implement a GUI or web interface
+- Add multi-company batch scraping.
+- Improve error handling.
+- Extract additional info (e.g., address, social media links).
+- Implement a GUI or web interface.
