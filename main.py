@@ -5,6 +5,7 @@ import pandas as pd
 import openpyxl
 
 def scrape_phone_email_turkish(url):
+    # Scraping number and email from url
     try:
         url = url.strip()
         if not url.startswith("http"):
@@ -62,8 +63,8 @@ for index in range(1, len(urls)):
         final_result = (names[index], result["emails"], result["phones"],  urls[index])
     print(final_result)
     final_data.append(final_result)
-print(final_data)
+# print(final_data)
 company_dataset = pd.DataFrame(final_data, columns=["Name", "Email", "Phone", "Url"])
-print(company_dataset)
+# print(company_dataset)
 company_dataset.to_csv("company_dataset", index=False)
 company_dataset.to_excel("company_dataset.xlsx", index=False)
