@@ -1,5 +1,5 @@
 # 🕸️ Web Scraper – Company Contact Info Extractor
-## 📖 Project Overview
+## 📖 Project Overview.
 This project is a web scraping tool that helps you quickly collect company contact details from the web.
 
 ### Input: A company name
