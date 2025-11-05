@@ -9,7 +9,7 @@ def scrape_phone_email_turkish(url):
     try:
         url = url.strip()
         if not url.startswith("http"):
-            url = "http://" + url  # Add http if missing
+            url = "http://" + url  # Add http if missing.
 
         response = requests.get(url, timeout=10)
         response.raise_for_status()  # Raises HTTPError if bad status
