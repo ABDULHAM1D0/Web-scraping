@@ -11,7 +11,7 @@ This project is a web scraping tool that helps you quickly collect company conta
 
 ### This tool is useful for market research, lead generation, and business analysis.
 
-## 🚀 Features
+## 🚀 Features.
 - 🔎 Automatically searches for the official company website.
 - 📬 Extracts email addresses.
 - ☎️ Extracts phone numbers.
