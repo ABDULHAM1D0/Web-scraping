@@ -5,7 +5,7 @@ import pandas as pd
 import openpyxl
 
 def scrape_phone_email_turkish(url):
-    # Scraping number and email from url.
+    # Scraping number and email from url in website.
     try:
         url = url.strip()
         if not url.startswith("http"):
