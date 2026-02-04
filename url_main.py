@@ -63,10 +63,10 @@ def find_official_website(company_name, serpapi_api_key):
 
 wb = openpyxl.load_workbook("WORLDFEST SPONSOR.xlsx")
 
-# Select the active sheet
+# Select the active sheet.
 sheet = wb.active
 
-# Read and print the data
+# Read and print the data.
 dataset_from_excel = []
 for row in sheet.iter_rows(min_row=1, values_only=True):
     str_type = str(row[0])
@@ -92,6 +92,7 @@ print(dictionary_urls)
 #     dt = pd.DataFrame(dictionary_urls)
 # finally:
 #     dt.to_csv('final_data.txt', index=False)
+
 
 
 
