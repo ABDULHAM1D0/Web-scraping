@@ -7,8 +7,8 @@ import openpyxl
 import json
 
 
-# company_names = ['AMAZON', 'MICROSOFT', 'TESLA', 'APPLE', 'LINUX', 'LAZIKA']
-# One way
+# company_names = ['AMAZON', 'MICROSOFT', 'TESLA', 'APPLE', 'LINUX', 'LAZIKA'].
+# One way.
 def searching_url(com_name):
     query = f"{com_name} OFFICIAL WEBSITE"
     attempt = 0
@@ -26,7 +26,7 @@ def searching_url(com_name):
             time.sleep(2 ** attempt)
     return None
     
-# Second way
+# Second way.
 def find_official_website(company_name, serpapi_api_key):
     params = {
         "engine": "google",
@@ -92,6 +92,7 @@ print(dictionary_urls)
 #     dt = pd.DataFrame(dictionary_urls)
 # finally:
 #     dt.to_csv('final_data.txt', index=False)
+
 
 
 
