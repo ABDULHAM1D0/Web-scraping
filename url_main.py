@@ -59,7 +59,7 @@ def find_official_website(company_name, serpapi_api_key):
 #     company_name = re.sub(r'\s+', ' ', company_name).strip()
 #     print(company_name)
 #     cleaned_data.append(company_name)
-# print(cleaned_data).
+# print(cleaned_data)
 
 wb = openpyxl.load_workbook("WORLDFEST SPONSOR.xlsx")
 
@@ -92,6 +92,7 @@ print(dictionary_urls)
 #     dt = pd.DataFrame(dictionary_urls)
 # finally:
 #     dt.to_csv('final_data.txt', index=False)
+
 
 
 
