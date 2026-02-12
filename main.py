@@ -21,7 +21,7 @@ def scrape_phone_email_turkish(url):
         # Emails regex (same)
         emails = set(re.findall(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+', text))
 
-        # Turkish phone number regex
+        # Turkish phone number regex.
         phone_pattern = re.compile(r'''
             (?:\+90\s*|0)?               # Country code +90 or leading 0, optional
             (?:\(?\d{3}\)?[\s\-\.]*)    # Area code with or without parentheses
