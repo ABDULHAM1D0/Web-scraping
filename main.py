@@ -39,8 +39,8 @@ def scrape_phone_email_turkish(url):
     except Exception as e:
         return {"error": str(e)}
 
-# url = "https://4kaglobal.com/"
-# result = scrape_phone_email_turkish(url)
+# url = "https://4kaglobal.com/".
+# result = scrape_phone_email_turkish(url).
 # print(result)
 with open("data.csv", mode="r") as file:
     dataset = file.readlines()
